@@ -31,7 +31,7 @@ And we keep it beginner-friendly. Everything is explained clearly and step-by-st
 
 ---
 
-## 📚 Current Labs
+## Current Labs
 
 | Lab # | Title                            | What You'll Learn |
 |-------|----------------------------------|-------------------|
