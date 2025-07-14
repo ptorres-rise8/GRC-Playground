@@ -66,8 +66,10 @@ And it's beginner-friendly. Everything is explained clearly and step-by-step, no
 
 ## Current Labs
 
-| Lab # | Title                            | What You'll Learn |
-|-------|----------------------------------|-------------------|
-| 1     | [Deny Public S3 Buckets](./Lab-1-Deny-Public-S3/README.md) | How to use policy as code (Rego + Conftest) to detect insecure S3 buckets |
+| Lab Title                                                                 | Description                                                                 |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| [Lab 01: “No Public Buckets Allowed”](./Policy-as-Code/Lab%2001-Policy-as-Code-Intro) | Learn how to write, test, and enforce infrastructure policy using code.     |
+| [Lab 01: “What Even Is a Control?”](./Control-Mapping/Lab%2001-Control-Mapping-for-Beginners) | Map NIST control AC-3 to tools in a DevSecOps pipeline. Includes a breakdown PDF, spreadsheet template, and visual diagram. |
+
 
 _More labs coming soon!_
