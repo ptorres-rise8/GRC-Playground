@@ -1,75 +1,71 @@
-# GRCLabs
+# GRC Playground
 
-**No PDFs. No gatekeeping. Just real-world, hands-on labs that help you understand GRC, security controls, and continuous authorization (cATO) one step at a time.**
+**The sandbox for GRC pros to break things, test ideas, and learn by doing.**
 
-Welcome to **GRC Labs**, a growing collection of beginner-friendly, tool-integrated labs designed to teach security and compliance concepts in a way that actually makes sense, even if you've never written a line of code or touched a control in your life.
+Welcome to the GRC Playground! A space built for GRC folks who are tired of reading 500-page PDFs and want to actually do the thing. No more theory with no application. No more guessing how policy as code works. Just hands-on labs designed to teach you how to turn frameworks into something real.
 
-If you're trying to understand how controls map to real tools, how policy as code works in the wild, or how continuous authorization actually plays out in the pipeline… you're in the right place.
-
----
-
-## Start Here (Beginner-Friendly)
-
-New to GitHub? New to working with code at all? You're in the right place.
-
-This entire repo is designed for GRC professionals, analysts, and curious minds who want to understand what GRC Engineering actually looks like without needing a computer science degree.
-
-### What is GitHub?
-
-Think of GitHub like Google Drive for code. This repo (aka this page) is like a shared folder, and inside are labs (folders) that contain exercises, files, and step-by-step guides.
-
-Each lab folder includes a `README.md` file, that’s your instruction manual. You don’t need to install anything or clone the repo to follow along. You can view everything right from your browser.
+This isn't your typical GRC content. We don’t do boring here.
 
 ---
 
-## How to Use This Repo
+## What You’ll Learn
 
-1. Scroll down to the **Current Labs** section below.
-2. Click on the lab that interests you.
-3. Open the `README.md` file in that lab folder.
-4. Follow the steps. These labs are hands-on, real-world, and built to teach by doing.
-
-If you’re ever unsure what something means, that’s normal and that’s part of learning. Each lab is designed to meet you where you are, with clear explanations and practical examples.
-
----
-
-## Feedback Welcome
-
-This project is always evolving, and your feedback makes it better. If you try a lab and something doesn't make sense, or sparks an idea, open an issue or send me a DM on LinkedIn.
-
-Let's learn together.
+- How to build and test real security controls  
+- How tools like Conftest, Rego, and Trivy work in practice  
+- How to use policy as code, CI/CD, and automation to reduce manual compliance work  
+- How to actually map controls to technical implementations  
+- How to stop saying “it depends” and start showing your work
 
 ---
 
 ## Who This Is For
 
-These labs are built for:
-- GRC analysts trying to break into more technical workflows
-- Engineers trying to understand how compliance fits into DevOps
-- Teams working toward cATO and needing real-life examples
-- Anyone who’s ever said, “What the heck is a control and how do I prove it?”
+- GRC pros who want to get more technical  
+- Cybersecurity analysts who want to understand the “G” and “R” in GRC  
+- Engineers who are being told to meet compliance requirements but don’t know what that means  
+- Anyone who's been stuck Googling “how to policy-as-code” and ended up in a 40-tab rabbit hole  
+- People who learn best by doing, not just by reading
 
 ---
 
-## What You'll Learn
+## Labs
 
-Each lab walks you through:
-- A real-world problem (like overly permissive S3 buckets)
-- The security control it relates to
-- A policy or test you can run (e.g., Rego with Conftest)
-- How to fix the problem
-- How to prove the fix works
+| Title | Description |
+|-------|-------------|
+| [Lab 01 – Deny Public S3 Buckets](./Policy-as-Code/Lab%2001-Deny-Public-S3) | Write a policy using Rego and Conftest to prevent public S3 buckets |
+| [Lab 01 – Control Mapping for Beginners](./Control-Mapping/Lab%2001-Control-Mapping-for-Beginners) | Learn how to map NIST 800-53 controls to your DevSecOps pipeline |
 
-And it's beginner-friendly. Everything is explained clearly and step-by-step, no experience required.
+More labs are in the works:  
+Policy as Code, Continuous Monitoring, Evidence Automation, and anything else GRC needs but never gets taught.
 
 ---
 
-## Current Labs
+## Start Here
 
-| Lab Title                                                                 | Description                                                                 |
-|---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Lab 01: “No Public Buckets Allowed”](./Policy-As-Code/Lab%2001-Deny-Public-S3) | Learn how to write, test, and enforce infrastructure policy using code.     |
-| [Lab 01: “What Even Is a Control?”](./Control-Mapping/Lab%2001-Control-Mapping-for-Beginners) | Map NIST control AC-3 to tools in a DevSecOps pipeline. Includes a breakdown PDF, spreadsheet template, and visual diagram. |
+New to GitHub? You’re not alone, and you’re not too late. Most GRC professionals weren’t handed a GitHub 101 course during onboarding. I get it.
 
+### How to navigate this repo:
+1. Scroll up to the **Labs** section.
+2. Click any lab title to open the folder.
+3. Inside each folder, open the `README.md` for step-by-step instructions.
+4. Most labs run entirely in your browser using GitHub Codespaces. That means: no installs, no local setup, no excuses.
 
-_More labs coming soon!_
+---
+
+## Feedback Welcome
+
+Have an idea for a new lab?  
+Something break while testing?  
+Want to say “this helped me actually get it”?
+
+Open an issue, submit a PR, or yell at me nicely on [LinkedIn](https://www.linkedin.com/in/ashley-pearce). I’m always looking to make this more useful.
+
+---
+
+## 👋 Who Made This?
+
+I’m a GRC nerd turned lab builder who got tired of seeing smart people struggle because no one showed them how this stuff actually works.
+
+If you’re ready to move from checklist zombie to hands-on GRC wizard, you’re in the right place.
+
+Follow along [on LinkedIn](https://www.linkedin.com/in/ashley-pearce) or contribute your own ideas for what we should build next.
