@@ -33,8 +33,8 @@ This isn't your typical GRC content. We don’t do boring here.
 | Lab # | Title                                              | Description                                                                      | Category         |
 |-------|----------------------------------------------------|----------------------------------------------------------------------------------|------------------|
 | 1     | [Deny Public S3 Buckets](./Policy-As-Code/Lab%2001-Deny-Public-S3/README.md) | Use Rego and Conftest to prevent public S3 bucket configs                        | Policy-as-Code   |
-| 2     | [Block Open Security Groups](./Policy-As-Code/Lab%2002-Block-Open-Security-Groups/README.md) | Detect and block 0.0.0.0/0 open security groups using policy-as-code             | Policy-as-Code   |
-| 3     | [Control Mapping for Beginners](./Control-Mapping/Lab%2001-Control-Mapping-for-Beginners/README.md) | Learn how to connect NIST 800  | Control Mapping
+| 2     | [Block Open Security Groups](./Policy-As-Code/Lab%2002-Block-Open-Security-Groups/readme.md) | Detect and block 0.0.0.0/0 open security groups using policy-as-code             | Policy-as-Code   |
+| 3     | [Control Mapping for Beginners](./Control-Mapping/Lab%2001-Control-Mapping-for-Beginners/readme.md) | Learn how to connect NIST 800  | Control Mapping
 
 
 
