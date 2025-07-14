@@ -68,7 +68,7 @@ And it's beginner-friendly. Everything is explained clearly and step-by-step, no
 
 | Lab Title                                                                 | Description                                                                 |
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Lab 01: “No Public Buckets Allowed”](./Policy-as-Code/Lab%2001-Deny-Public-S3) | Learn how to write, test, and enforce infrastructure policy using code.     |
+| [Lab 01: “No Public Buckets Allowed”](./Policy-As-Code/Lab%2001-Deny-Public-S3) | Learn how to write, test, and enforce infrastructure policy using code.     |
 | [Lab 01: “What Even Is a Control?”](./Control-Mapping/Lab%2001-Control-Mapping-for-Beginners) | Map NIST control AC-3 to tools in a DevSecOps pipeline. Includes a breakdown PDF, spreadsheet template, and visual diagram. |
 
 
