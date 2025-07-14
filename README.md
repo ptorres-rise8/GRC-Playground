@@ -32,7 +32,7 @@ This isn't your typical GRC content. We don’t do boring here.
 
 | Title | Description |
 |-------|-------------|
-| [Lab 01 – Deny Public S3 Buckets](./Policy-as-Code/Lab%2001-Deny-Public-S3) | Write a policy using Rego and Conftest to prevent public S3 buckets |
+| [Lab 01 – Deny Public S3 Buckets](./Policy-As-Code/Lab%2001-Deny-Public-S3) | Write a policy using Rego and Conftest to prevent public S3 buckets |
 | [Lab 01 – Control Mapping for Beginners](./Control-Mapping/Lab%2001-Control-Mapping-for-Beginners) | Learn how to map NIST 800-53 controls to your DevSecOps pipeline |
 
 More labs are in the works:  
