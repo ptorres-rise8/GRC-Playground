@@ -74,7 +74,7 @@ tar -xzf conftest_0.45.0_Linux_x86_64.tar.gz
 sudo mv conftest /usr/local/bin
 ```
 
-### 4. Verify it was installed correctly:
+4. Verify it was installed correctly:
 
 ```
 conftest --version
@@ -84,7 +84,7 @@ If a version number is shown, conftest was installed correctly.
 Tip: Codespaces are free for personal GitHub accounts (up to 60 hours/month)
 
 
-Step 4: Test the Policy
+### Step 4: Test the Policy
 1. From the terminal inside your Codespace, run:
 
 ```
