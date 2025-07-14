@@ -152,7 +152,7 @@ You now know:
 
 ## Downloads
 
-- [View the SecRel Pipeline Diagram](GRClabs/control-mapping/secrel_pipeline_diagram.png)
+- [View the SecRel Pipeline Diagram](Control-Mapping/Lab 01-Control-Mapping-for-Beginners/SecRel_Pipeline_Diagram.png)
 
 ---
 
