@@ -133,7 +133,7 @@ terraform init
 
 terraform plan -out=tfplan.binary
 
-terraform show -json tfplan.binary \> input.json
+terraform show -json tfplan.binary > input.json
 ```
 Now you'll have a file called input.json that Conftest will analyze.
 
