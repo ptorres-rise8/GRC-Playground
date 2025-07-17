@@ -55,6 +55,53 @@ New to GitHub? You’re not alone, and you’re not too late. Most GRC professio
 
 ---
 
+## Environment Setup (No Installs Needed)
+
+This lab uses something called a **DevContainer**, which is like a pre-configured workspace with all the tools you need already set up and ready to go.
+
+We designed this so you can focus on **learning how to write policies and test infrastructure**, not troubleshooting tool installations.
+
+You’ll still be creating your own folders, files, and Rego policies from scratch the DevContainer just skips the annoying setup for:
+
+- Terraform  
+- Conftest  
+- VS Code extensions
+
+---
+
+### New to GitHub or Codespaces?
+
+No problem! You don’t need to install anything. Here’s how to get started:
+
+1. **Fork this repo**  
+   - Click the “Fork” button at the top right to create your own copy.
+
+2. **Open it in GitHub Codespaces**  
+   - On your forked repo, click the green “Code” button  
+   - Select **“Open with Codespaces” → “New codespace”**
+
+3. **Let it load**  
+   - You’ll get a browser-based workspace that looks like VS Code  
+   - All tools are already available, no installs needed
+
+4. **Start the lab**  
+   - You’ll follow the instructions to:
+     - Create new folders and files
+     - Write your own Terraform or policy code
+     - Run `terraform plan` or `conftest test` in the built-in terminal
+
+---
+
+### Already using VS Code locally?
+
+If you have the **Dev Containers extension** installed, just clone the repo and click “Reopen in Container” when prompted.
+
+---
+
+> You’re still doing the work. You’re just skipping the boring install part.
+
+---
+
 ## Feedback Welcome
 
 Have an idea for a new lab?  
