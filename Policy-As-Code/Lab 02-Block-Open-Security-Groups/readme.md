@@ -96,32 +96,6 @@ policy = ["policy"]
 ### Step 3: Open in Codespaces
 1. Click the green Code button
 2. Select Open with Codespaces → Create new codespace
-3. Launch the built-in terminal and install Terraform by running the following command:
-```
-sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
-curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
-sudo tee /etc/apt/sources.list.d/hashicorp.list
-sudo apt-get update && sudo apt-get install terraform
-```
-4. Verify it was installed correctly:
-```
-terraform --version
-```
-If a version number is shown, conftest was installed correctly.
-
-5. Launch the built-in terminal and install Conftest by running the following command:
-```
-wget https://github.com/open-policy-agent/conftest/releases/download/v0.45.0/conftest_0.45.0_Linux_x86_64.tar.gz
-
-tar -xzf conftest_0.45.0_Linux_x86_64.tar.gz
-
-sudo mv conftest /usr/local/bin
-```
-6. Verify it was installed correctly:
-```
-conftest --version
-```
 
 Tip: Codespaces are free for personal GitHub accounts (up to 60 hours/month)
 
