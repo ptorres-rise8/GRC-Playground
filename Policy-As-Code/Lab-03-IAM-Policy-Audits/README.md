@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, you’re going to uncover hidden dangers in your infrastructure as code (IaC). Specifically, we’re going to focus on IAM policies—those little blocks of JSON that either lock your environment down tight or blow the doors wide open.
+In this lab, you’re going to uncover hidden dangers in your infrastructure as code (IaC). Specifically, we’re going to focus on IAM policies. Those little blocks of JSON that either lock your environment down tight or blow the doors wide open.
 
 By the end of this walkthrough, you'll be able to:
 
@@ -14,7 +14,7 @@ By the end of this walkthrough, you'll be able to:
 
 This lab is designed for folks who’ve never written a line of code before, but who are ready to start making sense of the alphabet soup of IAM, Rego, and policy enforcement.
 
-No AWS credentials, no fancy tooling—just GitHub Codespaces and your brain.
+No AWS credentials, no fancy tooling, just GitHub Codespaces and your brain.
 
 ---
 
@@ -52,11 +52,11 @@ Before we write any code, let’s look at what we’re up against.
 
 Here’s what a dangerously permissive IAM policy looks like:
 
-- It uses `"Action": "*"` — this means **any** action is allowed. Read, write, delete, escalate privileges, turn off logging—you name it, it’s allowed.
+- It uses `"Action": "*"` — this means **any** action is allowed. Read, write, delete, escalate privileges, turn off logging, you name it, it’s allowed.
 - It uses `"Resource": "*"` — this means **everything** in the environment is fair game: all users, all buckets, all logs, all resources.
 - It lacks any conditions, restrictions, or scope. There’s no limit to what this policy can access or who can assume it.
 
-In human terms, it’s like giving someone the keys to your house, your car, your bank account—and then setting your alarm code as “1234.”
+In human terms, it’s like giving someone the keys to your house, your car, and your bank account and then setting your alarm code as “1234.”
 
 ### Why is this bad?
 
@@ -268,7 +268,7 @@ If Capital One had implemented policy-as-code checks like this one, they could�
 
 ## Wrap-Up
 
-Look at you—writing Rego like it’s your second language.
+Look at you, writing Rego like it’s your second language.
 
 You just:
 
@@ -277,7 +277,7 @@ You just:
 - Used Conftest like a pro to enforce it  
 - Learned how wildcard permissions are the cybersecurity version of handing your house keys to a raccoon
 
-This wasn’t just a checkbox exercise. This was hands-on, real-world prep for the kind of stuff that actually matters in security. You’re no longer just reading about AC-6—you’re enforcing it. In code. Like a boss.
+This wasn’t just a checkbox exercise. This was hands-on, real-world prep for the kind of stuff that actually matters in security. You’re no longer just reading about AC-6, you’re enforcing it in code.
 
 If you got stuck, learned something new, or had a tiny panic attack followed by a victory fist pump, I want to hear about it.
 
