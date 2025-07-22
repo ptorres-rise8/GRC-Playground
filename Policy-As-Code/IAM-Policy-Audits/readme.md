@@ -52,16 +52,21 @@ The test should fail due to the bad IAM policy
 This free version gives you a hands-on look at how policy-as-code can enforce security in IAM role definitions. For the full experience, check out the paid version:
 
 ✅ Full control mapping (AC-2(12), AC-3, AC-4, etc.)
+
 ✅ Guided Notion walkthrough
+
 ✅ Completion checklist + badge
+
 ✅ Video walkthrough
+
 ✅ Bonus cheat sheets
 
-[Get the full lab here](https://ashleypearce.gumroad.com/l/ydxlmf))
+[Get the full lab here](https://ashleypearce.gumroad.com/l/ydxlmf)
 
 ## Feedback
 Have thoughts or ideas? Found a bug?
-Open an issue or reach out to me on LinkedIn
+
+Open an issue or reach out to me on [LinkedIn](https://www.linkedin.com/in/ashley-thornhill)
 
 ## License
 MIT: use, learn, share, and build upon it freely.
