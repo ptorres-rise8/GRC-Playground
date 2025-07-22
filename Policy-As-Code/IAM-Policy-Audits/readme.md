@@ -13,7 +13,8 @@ You’ll write and test a policy that enforces **least privilege**, flagging com
 - How to write and test a **Rego policy** with Conftest
 - How to flag `"*:*"` permissions and enforce action/resource constraints
 
-> ⚠️ **Note:** This lab is a working free version. For the complete lab experience with guided walkthroughs, control mapping, completion badges, and bonus content, check out the [Full Lab on Gumroad](https://gumroad.com/grcplayground).
+> ⚠️ **Note:** This lab is a working free version. For the complete lab experience with guided walkthroughs, control mapping, and bonus content, check out the [Full Lab on Gumroad](https://ashleypearce.gumroad.com/l/ydxlmf).
+
 
 ---
 
@@ -56,7 +57,7 @@ This free version gives you a hands-on look at how policy-as-code can enforce se
 ✅ Video walkthrough
 ✅ Bonus cheat sheets
 
-[Get the full lab here](https://gumroad.com/grcplayground)
+[Get the full lab here](https://ashleypearce.gumroad.com/l/ydxlmf))
 
 ## Feedback
 Have thoughts or ideas? Found a bug?
