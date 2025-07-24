@@ -1,13 +1,15 @@
 # IAM Policy Audit Lab – Hands-On GRC with Terraform & Rego
 
-## Scenario: The Midnight Security Alert
+## Scenario: The IAM Wildcard Panic
 
-You're the GRC engineer on duty at 2am. A production alert screams:
+You’re reviewing a Terraform pull request, and something doesn’t feel right.
 
-> **"S3 bucket public listing detected."**
-> 
+> A policy block shows up with Action: `"*"` and Resource: `"*"`.
 
-Instead of panic, you grab your policy-as-code toolset and squash misconfigurations before they ever reach prod. This lab simulates that exact moment, except in your local dev playground, with no fire drills involved.
+Your gut says, “this could destroy everything.”
+
+This lab puts you in the seat of a GRC engineer who’s caught overly permissive IAM before it ever hits production.
+You’ll write policy-as-code to make sure wildcard actions and resources are never silently approved again.
 
 ---
 
@@ -35,7 +37,7 @@ This kind of policy is a direct violation of multiple NIST 800-53 controls, and 
 
 You’ll write a Rego policy that catches these mistakes and stops them before they hit production.
 
-We’re going to build a policy-as-code safety net—one that flags these risky IAM policies early in the dev cycle, so your team can fix them before they turn into headlines.
+We’re going to build a policy-as-code safety net. One that flags these risky IAM policies early in the dev cycle, so your team can fix them before they turn into headlines.
 
 ---
 
@@ -61,15 +63,15 @@ No AWS credentials, no fancy tooling. Just GitHub Codespaces and your brain.
 
 Each of these NIST 800-53 controls has something to say about access management, traceability, and role enforcement. This lab covers:
 
-- **AC-2(12)** – Ensure accounts are uniquely identifiable (no shared accounts)
-- **AC-2(13)** – Enforce traceability to individual users
+- **AC-2(12)** – Avoids shared or overly broad policies that obscure individual accountability
+- **AC-2(13)** – Supports traceability by requiring scoped, assignable permissions
 - **AC-3** – Enforce access control decisions
 - **AC-3(4)** – Enforce separation of duties
 - **AC-4** – Control information flow (no wildcards or *:* madness)
 - **AC-6** – Use least privilege principles
 - **AC-6(1)** – Enforce roles and job-based access
 - **AC-6(9)** – Restrict access to security-relevant info/functions
-- **AC-22** – Limit access to runtime policy controls and logs
+- **AC-22** – Limit access to sensitive policy controls or security logs via IAM
 
 ---
 
@@ -314,23 +316,25 @@ This runs your Rego policy check every time code is pushed. It’s how you shift
 
 ## The Impact
 
-### Case File: Capital One Data Breach
+### Case File: AWS Role Abuse in the Wild
 
-**Date:** March 2019
+### Summary: 
 
-**Summary:** A misconfigured IAM role allowed an attacker to exfiltrate over 100 million customer records.
+Time and time again, organizations accidentally deploy IAM policies with *:* permissions. These wildcard grants allow malicious insiders or compromised processes to escalate privileges, disable logging, and access critical infrastructure.
 
-**How:** The attacker accessed AWS metadata from a server, got temporary IAM credentials, and used them to run `ListBuckets` and `GetObject` on every S3 bucket.
+How it usually happens:
+- Developers write “quick and dirty” IAM policies with `*` actions and resources
+- There’s no automated check in the CI/CD pipeline
+- The policy is deployed to production—and now it’s open season
 
-**Root Cause:**
+### Root Cause:
 
-- Wildcard permissions in IAM
-- No enforcement of least privilege
-- No runtime policy checks on sensitive actions
+- Wildcard permissions (`"Action"`: `"*"` and `"Resource"`: `"*"` in IAM)
+- No least privilege enforcement
+- No preventive policy validation before deployment
 
-**Mitigation:**
-
-If Capital One had implemented policy-as-code checks like this one, they could’ve flagged and denied the overly permissive IAM role **before** deployment. That’s the difference between security theater and real prevention.
+### Mitigation:
+If you had a Rego policy like the one in this lab, it would catch and reject that IAM policy automatically. You wouldn’t have to manually catch every mistake—you’d shift IAM risk left, with real prevention instead of reactive audit findings.
 
 ---
 
