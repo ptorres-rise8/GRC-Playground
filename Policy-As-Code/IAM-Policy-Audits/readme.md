@@ -19,11 +19,11 @@ Before we write any code, let’s look at what we’re up against.
 
 Here’s what a dangerously permissive IAM policy looks like:
 
-- It uses `"Action": "*"` — this means **any** action is allowed. Read, write, delete, escalate privileges, turn off logging—you name it, it’s allowed.
+- It uses `"Action": "*"` — this means **any** action is allowed. Read, write, delete, escalate privileges, turn off logging, you name it, it’s allowed.
 - It uses `"Resource": "*"` — this means **everything** in the environment is fair game: all users, all buckets, all logs, all resources.
 - It lacks any conditions, restrictions, or scope. There’s no limit to what this policy can access or who can assume it.
 
-In human terms, it’s like giving someone the keys to your house, your car, your bank account—and then setting your alarm code as “1234.”
+In human terms, it’s like giving someone the keys to your house, your car, your bank account and then setting your alarm code as “1234.”
 
 ### Why is this bad?
 
@@ -171,7 +171,7 @@ resource "aws_iam_policy" "bad_policy" {
 **What’s happening here?**
 
 - We're defining an IAM policy using Terraform syntax.
-- `Action = "*"` means any action (read, write, delete, nuke your logs—anything).
+- `Action = "*"` means any action (read, write, delete, nuke your logs, anything).
 - `Resource = "*"` means the action can apply to every single thing in the account.
 - We’re encoding this policy as a JSON blob with `jsonencode`.
 
@@ -325,7 +325,7 @@ Time and time again, organizations accidentally deploy IAM policies with *:* per
 How it usually happens:
 - Developers write “quick and dirty” IAM policies with `*` actions and resources
 - There’s no automated check in the CI/CD pipeline
-- The policy is deployed to production—and now it’s open season
+- The policy is deployed to production and now it’s open season
 
 ### Root Cause:
 
@@ -334,7 +334,7 @@ How it usually happens:
 - No preventive policy validation before deployment
 
 ### Mitigation:
-If you had a Rego policy like the one in this lab, it would catch and reject that IAM policy automatically. You wouldn’t have to manually catch every mistake—you’d shift IAM risk left, with real prevention instead of reactive audit findings.
+If you had a Rego policy like the one in this lab, it would catch and reject that IAM policy automatically. You wouldn’t have to manually catch every mistake, you’d shift IAM risk left, with real prevention instead of reactive audit findings.
 
 ---
 
