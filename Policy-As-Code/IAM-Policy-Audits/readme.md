@@ -84,7 +84,7 @@ This lab runs best in GitHub Codespaces. Choose to either fork the repo for a qu
 > If you want to dive straight into testing the policy and running the Rego, fork the GitHub repo or download the included ZIP. All necessary files are included.
 > 
 
-*Link to your GitHub or ZIP here.*
+[GRC Playground](https://github.com/ashpearce/GRC-Playground)
 
 ---
 
